@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #030712;
+  --fg: #e5e7eb;
+  --accent: #00fff6;
+  --accent-2: #00b4ff;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-gray-200 antialiased;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(0,180,255,0.08), transparent 60%),
+              radial-gradient(800px 400px at 90% 10%, rgba(0,255,246,0.06), transparent 60%),
+              #0b1120;
+}
+
+.holo-card {
+  @apply bg-white/5 backdrop-blur-md border border-cyan-400/20 rounded-xl shadow-neon;
+}
+
+.holo-glow {
+  text-shadow: 0 0 10px rgba(0,255,246,0.7), 0 0 20px rgba(0,180,255,0.6);
+}
+
+.holo-grid {
+  background-image: linear-gradient(rgba(0,255,246,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(0,180,255,0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
+}
